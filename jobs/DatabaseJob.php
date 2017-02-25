@@ -43,7 +43,7 @@ class DatabaseJob extends Job
     }
 
     /**
-     * 获取对垒任务id
+     * 获取队列任务id
      * @return mixed
      */
     public function getJobId()

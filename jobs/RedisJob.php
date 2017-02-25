@@ -1,6 +1,6 @@
 <?php
 /**
- * redis队列任务
+ * redis闃熷垪浠诲姟
  * User: shmilyzxt 49783121@qq.com
  * Date: 2016/11/23
  * Time: 17:14

@@ -1,6 +1,6 @@
 <?php
 /**
- * ActiveMQ¶ÓÁÐ
+ * ActiveMQé˜Ÿåˆ—
  * User: 49783121@qq.com
  * Date: 2017/1/26
  * Time: 13:40
@@ -25,7 +25,7 @@ class ActivemqQueue extends Queue
     }
 
     /**
-     * Èë¶ÓÁÐ
+     * å…¥é˜Ÿåˆ—
      * @param $job
      * @param string $data
      * @param null $queue
@@ -35,7 +35,7 @@ class ActivemqQueue extends Queue
         $queue = $this->getQueue($queue);
         $this->pushDataToQueue($job,$data,$queue, 0,0,0);
         
-        //¸üÐÂ
+        //æ›´æ–°
     }
 
     protected function later($dealy, $job, $data = '', $queue = null)

@@ -165,7 +165,7 @@ class DatabaseQueue extends Queue
         $queue = $this->getQueue($queue);
         $created_at = time();
         $available_at = $this->getAvailableAt($delay, $created_at);
-        return $this->connector->createCommand()->insert('jobs', [
+        return $this->connector->createCommand()->insert($this->table, [
             'queue' => $queue,
             'payload' => $payload,
             'attempts' => $attempts,
